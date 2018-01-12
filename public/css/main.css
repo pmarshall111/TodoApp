@@ -1,0 +1,53 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Coming Soon";
+  user-select: none;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+header {
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0px 5px rgba(0,0,0,0.5);
+  z-index: 5
+}
+
+
+
+
+
+
+
+main {
+  background: repeating-linear-gradient(hsl(30, 52%, 87%) 0, hsl(30, 52%, 87%) 70px, #000 71px);
+  text-align: center;
+  min-height: 100vh;
+  width: 1150px;
+  margin: 0 auto;
+  box-shadow: 0px 0px 20px rgba(0,0,0,0.5);
+  z-index: 1;
+  position: relative;
+}
+
+h1 {
+  font-size: 70px;
+  padding: 60px;
+}
+
+textarea {
+  resize: none;
+  background: hsl(30,52%,97%);
+  outline: none;
+  font-size: 28px;
+  padding: 12px;
+  width: 800px;
+  margin-top: -14px
+}
+
+textarea:focus {
+  background: hsl(30,52%,99%)
+}

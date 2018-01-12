@@ -1,0 +1,1 @@
+Possible bug on reordering where if you add items super fast, the ordering can get a bit funny when you try to delete or reposition elements. Hard to reproduce

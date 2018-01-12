@@ -1,0 +1,99 @@
+#todos {
+  margin: 1em;
+  text-align: left;
+  width: 1000px;
+  font-size: 28px;
+  padding: 1rem;
+  margin: 1em auto;
+}
+
+ul {
+  margin-top: 40px;
+  list-style-type: none;
+  position: relative;
+  transition: height 0.3s ease-out;
+}
+
+
+li {
+  width: 800px;
+  margin: 0 auto;
+  height: 70px;
+  font-size: 28px;
+  transition: top 0.3s;
+  cursor: pointer;
+  position: absolute;
+  left: 110px;
+}
+
+li:hover {
+  color: #FF0800;
+}
+
+/*Potentials:
+#8DB600
+#66B447
+
+#008000
+
+
+
+
+
+
+*/
+
+.bullet {
+  width: 10px;
+  height: 10px;
+  background: black;
+  position: relative;
+  left: 15px;
+  top: 15px;
+}
+
+.reorder {
+  width: 40px;
+  height: 40px;
+  position: relative;
+  left: -48px;
+  top: -46px;
+  cursor: n-resize;
+}
+
+
+.sweepOut {
+  animation: removeItem 0.75s forwards
+}
+
+.bin {
+  height: 50px;
+  position: absolute;
+  cursor: pointer
+}
+
+.binPos {
+  position: relative;
+  top: -92px;
+  left: 750px
+}
+
+.binWiggle {
+  animation: 0.3s wiggle
+}
+
+
+@keyframes wiggle {
+  0% {}
+  20% {left: 748px}
+  40% {left: 752px}
+  60% {left: 749px}
+  80% {left: 751px}
+  100% {left: 750px}
+}
+
+@keyframes removeItem {
+  0% {}
+  10% {margin-left: -20px}
+  100% {margin-left: 1500px}
+}
